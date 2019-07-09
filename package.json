@@ -4,6 +4,7 @@
     "displayName": "Riot.JS VSC",
     "description": "Syntax highlight for Riot.JS components",
     "version": "4.0.0",
+    "repository": "https://github.com/nesterow/riot-vsc",
     "engines": {
         "vscode": "^1.36.0"
     },
