@@ -1,0 +1,91 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Riot.JS (HTML)",
+	"scopeName": "source.html.riot",
+	"injections": {
+		"L:meta.attribute - (string.quoted.*.html string.unquoted.html, source.js)": {
+			"patterns": [
+				{
+					"include": "#keywords-riot"
+				},
+				{
+					"include": "#tag-riot"
+				}
+			]
+		},
+		"R:text.html - (comment.block, text.html meta.embedded, meta.tag.*.*.html, meta.tag.*.*.*.html, meta.tag.*.*.*.*.html)": {
+			"comment": "Uses R: to ensure this matches after any other injections.",
+			"patterns": [
+				{
+					"match": "<",
+					"name": "invalid.illegal.bad-angle-bracket.html"
+				},
+				{
+					"include": "#keywords-riot"
+				}
+			]
+		}
+	},
+	"patterns": [
+		{
+			"include": "text.html.basic#xml-processing"
+		},
+		{
+			"include": "text.html.basic#comment"
+		},
+		{
+			"include": "#tag-riot"
+		},
+		{
+			"include": "text.html.basic#tags-valid"
+		},
+		{
+			"include": "text.html.basic#entities"
+		},
+		{
+			"include": "#keywords-riot"
+		}
+	],
+	"repository": {
+		"keywords-riot": {
+			"match": "each=",
+			"name": "keyword.riot"
+		},
+		"tag-riot": {
+			"begin": "{",
+			"beginCaptures": {
+				"0": {
+					"name": "entity"
+				},
+				"1": {
+					"name": "source.js"
+				}
+			},
+			"end": "}",
+			"endCaptures": {
+				"0": {
+					"name": "entity"
+				},
+				"1": {
+					"name": "source.js"
+				}
+			},
+			"contentName": "source.js",
+			"patterns": [
+				{
+					"begin": "//",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.js"
+						}
+					},
+					"end": "(?=[_-]?[%?]>)|\\n",
+					"name": "comment.line.double-slash.js"
+				},
+				{
+					"include": "source.js"
+				}
+			]
+		}
+	}
+}

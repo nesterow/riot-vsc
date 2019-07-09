@@ -1,0 +1,25 @@
+{
+    "name": "riot-vsc",
+    "displayName": "Riot.JS VSC",
+    "description": "Syntax highlight for Riot.JS components",
+    "version": "4.0.0",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "riot",
+            "aliases": ["Riot.JS (HTML)", "riot"],
+            "extensions": [".riot",".rt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "riot",
+            "scopeName": "source.html.riot",
+            "path": "./syntaxes/riot.tmLanguage.json"
+        }]
+    }
+}
