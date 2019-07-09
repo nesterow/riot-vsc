@@ -3,10 +3,10 @@
     "publisher": "nesterow",
     "displayName": "Riot.JS VSC",
     "description": "Syntax highlight for Riot.JS components",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "repository": "https://github.com/nesterow/riot-vsc",
     "engines": {
-        "vscode": "^1.36.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Programming Languages"
