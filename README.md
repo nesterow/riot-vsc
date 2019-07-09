@@ -2,6 +2,6 @@
 
 Syntax hightlighting for `.riot` components.
 
-![screenshot](/assets/screenshot.png)
+![screenshot](https://github.com/nesterow/riot-vsc/raw/master/assets/screenshot.png)
 
 **Enjoy!**

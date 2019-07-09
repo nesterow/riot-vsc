@@ -1,5 +1,6 @@
 {
     "name": "riot-vsc",
+    "publisher": "nesterow",
     "displayName": "Riot.JS VSC",
     "description": "Syntax highlight for Riot.JS components",
     "version": "4.0.0",
