@@ -10,7 +10,7 @@ If you found a problem and know the solution:
 - Fork repository
 - Fix the problem
 - Push your fix to a separate branch
-- Make pull a request
+- Make a pull request
 
 If you need help, just [open an issue](https://github.com/nesterow/riot-vsc/issues)
 
