@@ -4,7 +4,7 @@ Syntax hightlighting for `.riot` components.
 
 ![screenshot](https://github.com/nesterow/riot-vsc/raw/master/assets/screenshot.png)
 
-## Contrubute ❤️
+## Contribute ❤️
 
 If you found a problem and know the solution:
 - Fork repository
