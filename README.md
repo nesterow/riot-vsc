@@ -1,6 +1,6 @@
 # riot-vsc
 
-Syntax hightlighting for `.riot` components.
+Syntax highlighting for `.riot` components.
 
 ![screenshot](https://github.com/nesterow/riot-vsc/raw/master/assets/screenshot.png)
 
